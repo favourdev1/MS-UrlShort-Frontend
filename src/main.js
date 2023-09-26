@@ -8,6 +8,7 @@ import App from "./App.vue";
 import UsersPage from "./UsersPage.vue";
 import HomePage from "./HomePage.vue";
 import LoginPage from "./LoginPage.vue";
+import SignupPage from "./SignupPage.vue"
 
 // Vue.use(VueRouter);
 
@@ -22,6 +23,11 @@ const routes = [{
     {
         path: "/login",
         component: LoginPage,
+    },
+
+    {
+        path: "/signup",
+        component: SignupPage,
     },
 ];
 
