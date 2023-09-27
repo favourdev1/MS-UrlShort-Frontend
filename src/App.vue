@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-11/12 mx-auto">
+  <div class="w-full md:w-11/12  lg:w-3/4 mx-auto ">
     <NavBar></NavBar>
 
     <router-view></router-view>
