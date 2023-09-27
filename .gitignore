@@ -1,20 +1,6 @@
 .DS_Store
 node_modules
 dist
-/public
-routes
-src
-/babel.config.js
-/jsconfig.json
-/package.json 
-babel.config.js 
-jsconfig.json 
-package-lock.json
-package.json
-postcss.config.js
-README.md
-tailwind.config.js
-vue.config.js
 
 # local env files
 .env.local
