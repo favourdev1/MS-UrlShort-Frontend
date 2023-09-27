@@ -51,7 +51,7 @@
           />
         </div>
 
-        <h5 class="text-pink-600">Brand Anything</h5>
+        <h5 class="text-pink-600 font-bold">Brand Anything</h5>
         <p class="text-2xl font-bold">Turn your Links into brand assets</p>
         <p class="text-slate-600">
           Whether you’re sharing one link or millions, UrlShort lets you
@@ -59,9 +59,22 @@
           with every click.
         </p>
 
-        <div class="rounded-full bg-pink-100 text-pink-600 w-max px-6 text-sm py-2">
+        <div
+          class="rounded-full bg-pink-100 text-pink-500 w-max px-6 my-3 text-sm font-bold py-3"
+        >
           <p>Get Started</p>
-          <i class="bx bx-chevron-right"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+              clip-rule="evenodd"
+            />
+          </svg>
         </div>
       </div>
 
