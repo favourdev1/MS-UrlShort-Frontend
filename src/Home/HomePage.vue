@@ -39,8 +39,8 @@
       </div>
     </div>
 
-    <div class="border-t mt-5 flex items-center text-start">
-      <div class="py-10 w-1/2">
+    <div class="border-t mt-10 py-20 flex items-center text-start">
+      <div class="">
         <div
           class="w-16 h-16 p-1 my-7 rounded-full ring-1 ring-slate-900/10 shadow overflow-hidden"
         >
@@ -52,15 +52,15 @@
         </div>
 
         <h5 class="text-pink-600 font-bold">Brand Anything</h5>
-        <p class="text-2xl font-bold">Turn your Links into brand assets</p>
-        <p class="text-slate-600">
+        <p class="text-3xl font-bold my-2">Turn your Links into brand assets</p>
+        <p class="text-slate-600 text-lg lg:pr-32">
           Whether you’re sharing one link or millions, UrlShort lets you
           personalize, share, and track your content links, while capturing data
           with every click.
         </p>
 
         <div
-          class="rounded-full bg-pink-100 text-pink-500 w-max px-6 my-3 text-sm font-bold py-3"
+          class="rounded-full bg-pink-50 hover:bg-pink-100 hover:text-pink-700 text-pink-600 w-max px-6 my-3 text-sm font-bold py-3 flex items-center cursor-pointer"
         >
           <p>Get Started</p>
           <svg
@@ -78,7 +78,12 @@
         </div>
       </div>
 
-      <div></div>
+      <div>
+        <img
+          :src="require('@/assets/images/linkIllustation.svg')"
+          alt=""
+        />
+      </div>
     </div>
   </div>
 </template>
