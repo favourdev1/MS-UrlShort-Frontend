@@ -20,7 +20,13 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: Nunito ;
+  src:url('~@/assets/font/NunitoSans_10pt-Regular.ttf')
+}
+
+
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 </style>
