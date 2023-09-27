@@ -1,6 +1,20 @@
 .DS_Store
 node_modules
-/dist
+node_modules
+public
+routes
+src
+.gitignore
+babel.config.js
+favicon.ico
+index.html
+jsconfig.json
+package-lock.json
+package.json
+postcss.config.js
+README.md
+tailwind.config.js
+vue.config.js
 
 
 # local env files
