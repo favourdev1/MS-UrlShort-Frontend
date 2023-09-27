@@ -7,7 +7,7 @@
     </Bigtext>
     <p class="text-gray-700 text-center">
       Already have an account ?
-      <a href="/Login" class="text-purple-800 underline">Login</a>
+      <router-link to="/Login" class="text-purple-800 underline">Login</router-link>
     </p>
     <GoogleButton>Sign in with google</GoogleButton>
 
