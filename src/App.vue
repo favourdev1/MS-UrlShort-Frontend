@@ -1,30 +1,26 @@
 <template>
-  <div class="w-full md:w-11/12  lg:w-3/4 mx-auto ">
-    <NavBar></NavBar>
+  <div class="">
+    <div class="w-full md:w-11/12 lg:w-3/4 mx-auto">
+      <NavBar></NavBar>
 
-    <router-view></router-view>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
-
-
-
 <script>
-
 import NavBar from "./components/navbar/NavBar.vue";
 
 export default {
   name: "App",
   components: {
-
     NavBar,
-
   },
 };
 </script>
 
 <style>
-body{
-  font-family: 'Nunito Sans', sans-serif;
+body {
+  font-family: "Nunito Sans", sans-serif;
 }
 </style>
