@@ -2,7 +2,8 @@
   <div class="">
     <div class="w-full md:w-11/12 lg:w-3/4 mx-auto">
       <NavBar></NavBar>
-
+</div>
+<div>
       <router-view></router-view>
     </div>
   </div>
