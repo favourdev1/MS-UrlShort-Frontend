@@ -149,9 +149,11 @@
           <div class="flex items-center mx-auto py-10">
             <!-- <div class="w-full "></div> -->
 
-            <PaymentContainer></PaymentContainer>
-            <PaymentContainer></PaymentContainer>
-            <PaymentContainer></PaymentContainer>
+            <PaymentContainer planName="Basic (Free)" buttonColor="bg-white border hover:bg-slate-200"></PaymentContainer>
+
+            <PaymentContainer  planName="Pro (Paid)" planNameColor="text-purple-700"  buttonColor="bg-purple-700 text-white hover:bg-purple-600 "></PaymentContainer>
+
+            <PaymentContainer  planName="Enterprise (Paid)" buttonColor="bg-orange-600 text-white hover:bg-orange-700"></PaymentContainer>
           </div>
         </div>
       </div>
