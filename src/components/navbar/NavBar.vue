@@ -10,14 +10,14 @@
 
     <div class="flex items-center">
       <navButton
-        to="/"
+        to="/login"
         class=" mr-4 py-3 hover:font-bold text-slate-900  hover:text-purple-700 flex items-center bg-white/25 text-sm  ring-1 ring-inset ring-black/[0.08] hover:bg-gray-50 hover:ring-purple-700"
         ><span class="mr-3 "> Login </span>
         <SigninSvg class=""></SigninSvg>
       </navButton>
 
       <navButton
-        to="/login"
+        to="/signup"
         class="text-white bg-purple-700 shadow-lg shadow-indigo-700/50"
         >Register Now
       </navButton>

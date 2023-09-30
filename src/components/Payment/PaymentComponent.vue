@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative z-10 mx-4 shadow-lg ring-1 ring-slate-900/10 sm:rounded-3xl lg:flex-1"
+    class="relative z-10 mx-4 shadow-lg ring-1 ring-slate-900/10 sm:rounded-3xl lg:flex-1 h-max"
   >
     <div class="relative bg-white px-4 py-10 sm:rounded-3xl sm:px-10">
       <div class="flex items-center justify-between">

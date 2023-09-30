@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center pt-20 mx-auto w-full md:w-11/12 lg:w-3/4">
+  <div class="text-center pt-20 mx-auto w-full md:w-11/12 lg:w-3/4 h-max">
     <h1
       class="font-bold py-10 text-7xl text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-700 to-blue-700"
     >
@@ -89,7 +89,7 @@
         >
           <img
             :src="require('@/assets/images/modern-features.0c791977.png')"
-            class="bg-contain w-18 rounded-full"
+            class="bg-contain w-18 rounded-full "
             alt=""
           />
         </div>
@@ -128,14 +128,14 @@
       </div>
     </div>
   </div>
-  <div>
-    <div class="relative mt-10 py-20">
-      <div class="z-1 absolute w-full h-full">
-        <img :src="require('@/assets/images/beams.png')" alt="" />
+  <div class="h-min relative">
+    <div class="relative mt-10 py-20 h-max overflow-hidden">
+      <div class="z-1 absolute w-full h-max overflow-hidden ">
+        <img :src="require('@/assets/images/beams.png')" class="" alt="" />
       </div>
 
-      <div class="z-10 absolute w-full py-10">
-        <div class="h-full w-full md:w-11/12 xl:w-4/5 mx-auto">
+      <div class="z-10 relative h-max w-full py-10">
+        <div class=" z-10 h-full w-full md:w-11/12 xl:w-4/5 mx-auto">
           <div>
             <h5 class="text-blue-600 font-bold">Pricing</h5>
             <p class="text-5xl font-bold my-2">Get just one or get ’em all.</p>
@@ -166,7 +166,8 @@
               </ul>
             </PaymentContainer>
 
-            <PaymentContainer class="bg-transparent"
+            <PaymentContainer
+              class="bg-transparent"
               planName="Pro (Paid)"
               :shouldShow="true"
               planNameColor="text-purple-700"
