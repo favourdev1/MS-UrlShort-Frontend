@@ -33,7 +33,7 @@
       <path stroke="#0EA5E9" stroke-width="1.5" d="M3 11h16"></path>
     </svg>
     <p class="ml-5">
-      <strong class="font-semibold text-slate-900">Every site template</strong>
+      <strong class=" text-slate-900">Every site template</strong>
       {{ paymentFeaturesText }}
     </p>
   </li>

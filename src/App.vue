@@ -1,9 +1,9 @@
 <template>
   <div class="">
-    <div class="w-full md:w-11/12 lg:w-3/4 mx-auto">
-      <NavBar></NavBar>
+    <div class="w-full fixed top-0 backdrop-blur-md bg-white">
+      <NavBar ></NavBar>
     </div>
-    <div>
+    <div class="pt-32rici">
       <router-view></router-view>
     </div>
     <div class="w-full md:w-11/12 lg:w-3/4 mx-auto">

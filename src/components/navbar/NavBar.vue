@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between border-b py-4">
+  <div class="w-full md:w-11/12 lg:w-3/4 mx-auto flex items-center justify-between border-b py-4">
     <router-link to="/">
       <img
         :src="require('@/assets/images/bitly.png')"
