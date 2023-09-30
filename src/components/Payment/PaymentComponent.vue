@@ -1,52 +1,51 @@
 <template>
   <div
-    class="relative z-10 mx-4 shadow-lg ring-1 ring-slate-900/10 sm:rounded-3xl lg:flex-1 h-max"
+    class="relative z-10 mx-4 ring-1 ring-slate-900/10 sm:rounded-3xl lg:flex-1 h-max"
   >
     <div class="relative bg-white px-4 py-10 sm:rounded-3xl sm:px-10">
-      <div class="flex items-center justify-between">
-        <p :class="[, 'font-bold', 'text-medium', planNameColor]">
-          {{ planName }}
-        </p>
-
-        <button
-          :class="[
-            'inline-flex',
-            'justify-center',
-            'rounded-lg',
-            'text-sm',
-            'font-medium',
-            'py-2',
-            'px-3',
-            buttonColor,
-          ]"
+      <div class="flex items-center justify-between py-0">
+        <p class="font-semibold text-lg">Basic Plan</p>
+        <div v-show="shouldShow"
+          class="w-max bg-purple-100 font-semibold rounded-full px-3 py-1.5 text-purple-700"
         >
-          {{ buttonText }}
-        </button>
+          <small class="text-xs" > Most Popular </small>
+        </div>
       </div>
-
-      <div class="mt-3 flex items-center" v-show="shouldShow">
+      <p class="mt-6 text-gray-500 text-sm leading-5">
+        The essentials to provide your best work for clients.
+      </p>
+      <div class="mt-3 flex items-center" >
         <p class="text-[2.5rem] leading-none text-slate-900">
-          $<span class="font-bold">299</span>
-        </p>
-        <p class="ml-3 text-sm">
-          <span class="font-semibold text-slate-900">one-time payment</span
-          ><br /><span class="text-slate-500">plus local taxes</span>
+         <PriceView duration="/month" price="200"></PriceView>
         </p>
       </div>
+      <slot></slot>
 
-      
-     <slot></slot>
+      <button 
+        :class="[
+  
+          'rounded-lg',
+          'mt-4',
+          'text-sm',
+          'w-full',
+          ,
+          'px-5',
+          'py-2',
+          'mx-auto',
+          buttonColor,
+        ]"
+      >
+        {{ buttonText }}
+      </button>
     </div>
   </div>
 </template>
 
 <script>
-
+import PriceView  from "./PriceView.vue"; 
 export default {
-  components: {
-   
-  },
-  
+  components: {PriceView},
+
   props: {
     planName: String, // Define the prop and its type
     buttonText: {
@@ -55,7 +54,7 @@ export default {
     },
     buttonColor: {
       type: String,
-      default: "bg-slate-900 text-white hover:bg-slate-700 ",
+      default: "border-blue-500 bg-white rounded-lg px-5 ",
     },
 
     planNameColor: {
@@ -63,8 +62,9 @@ export default {
       default: "text-black",
     },
 
-    shouldShow:{
-        default:true,
-  },}
+    shouldShow: {
+      default: true,
+    },
+  },
 };
 </script>

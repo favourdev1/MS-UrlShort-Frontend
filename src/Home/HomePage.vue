@@ -89,7 +89,7 @@
         >
           <img
             :src="require('@/assets/images/modern-features.0c791977.png')"
-            class="bg-contain w-18 rounded-full "
+            class="bg-contain w-18 rounded-full"
             alt=""
           />
         </div>
@@ -129,16 +129,15 @@
     </div>
   </div>
 
-
   <!-- Beginning of ppayment section  -->
   <div class="h-min relative">
     <div class="relative mt-10 py-20 h-max overflow-hidden">
-      <div class="z-1 absolute w-full h-max overflow-hidden ">
+      <!-- <div class="z-1 absolute w-full h-max overflow-hidden ">
         <img :src="require('@/assets/images/beams.png')" class="" alt="" />
-      </div>
+      </div> -->
 
-      <div class="z-10 relative h-max w-full py-10">
-        <div class=" z-10 h-full w-full md:w-11/12 xl:w-4/5 mx-auto">
+      <div class="z-10 relative h-max w-5/6 mx-auto py-10 border-t">
+        <div class="z-10 h-full w-full md:w-11/12 xl:w-4/5 mx-auto">
           <div>
             <h5 class="text-blue-600 font-bold">Pricing</h5>
             <p class="text-5xl font-bold my-2">Get just one or get ’em all.</p>
@@ -157,52 +156,59 @@
               :shouldShow="false"
               buttonColor="bg-white border hover:bg-slate-200"
             >
-              <p
-                class="mt-6 text-base leading-6 text-slate-600 text-center font-bold"
-              >
-                Customize the end of your links
-              </p>
-              <ul
-                class="mt-10 space-y-8 border-t border-slate-900/10 pt-10 text-sm leading-6 text-slate-700"
-              >
-                <PaymentFeatures></PaymentFeatures>
+              <ul class="mt-6 space-y-4 text-sm leading-6 text-slate-700">
+                <PaymentFeatures> 5 custom back-halves </PaymentFeatures>
+
+                <PaymentFeatures>
+                  PNG & JPEG QR Code download formats
+                </PaymentFeatures>
+
+                <PaymentFeatures> QR Code customizations </PaymentFeatures>
+
+                <PaymentFeatures> 2 QR Codes/month </PaymentFeatures>
+
+                <PaymentFeatures> 10 links/month </PaymentFeatures>
               </ul>
             </PaymentContainer>
 
             <PaymentContainer
               class="bg-transparent"
               planName="Pro (Paid)"
-              :shouldShow="true"
               planNameColor="text-purple-700"
               buttonColor="bg-purple-700 text-white hover:bg-purple-600 "
             >
-              <p
-                class="mt-6 text-base leading-6 text-purple-600 text-center font-bold"
-              >
-                Everything in Pro and More!
-              </p>
+              <ul class="mt-6 space-y-4 text-sm leading-6 text-slate-700">
+                <PaymentFeatures paymentFeaturesText="">
+                  25 products
+                </PaymentFeatures>
+                <PaymentFeatures> Up to 10,000 subscribers </PaymentFeatures>
 
-              <ul
-                class="mt-10 space-y-8 border-t border-slate-900/10 pt-10 text-sm leading-6 text-slate-700"
-              >
-                <PaymentFeatures></PaymentFeatures>
+                <PaymentFeatures> Advanced analytics </PaymentFeatures>
+
+                <PaymentFeatures>
+                  24-hour support response time
+                </PaymentFeatures>
+
+                <PaymentFeatures> Marketing automations </PaymentFeatures>
               </ul>
             </PaymentContainer>
 
             <PaymentContainer
               planName="Enterprise (Paid)"
-              buttonColor="bg-orange-600 text-white hover:bg-orange-700"
+              buttonColor="border hover:bg-slate-300"
             >
-              <p
-                class="mt-6 text-base leading-6 text-orange-600 text-center font-bold"
-              >
-                Everything in Pro and More!
-              </p>
+              <ul class="mt-6 space-y-4 text-sm leading-6 text-slate-700">
+                <PaymentFeatures> Unlimited products </PaymentFeatures>
 
-              <ul
-                class="mt-10 space-y-8 border-t border-slate-900/10 pt-10 text-sm leading-6 text-slate-700"
-              >
-                <PaymentFeatures paymentFeaturesText=""> </PaymentFeatures>
+                <PaymentFeatures> Unlimited subscribers </PaymentFeatures>
+
+                <PaymentFeatures> Advanced analytics </PaymentFeatures>
+
+                <PaymentFeatures>
+                  1-hour, dedicated support response time
+                </PaymentFeatures>
+
+                <PaymentFeatures> Marketing automations </PaymentFeatures>
               </ul>
             </PaymentContainer>
           </div>
