@@ -24,7 +24,7 @@
         </button>
       </div>
 
-      <div class="mt-3 flex items-center">
+      <div class="mt-3 flex items-center" v-show="shouldShow">
         <p class="text-[2.5rem] leading-none text-slate-900">
           $<span class="font-bold">299</span>
         </p>
@@ -34,18 +34,19 @@
         </p>
       </div>
 
-      <p class="mt-6 text-sm leading-6 text-slate-600">
-        Get lifetime access to every one of our website templates as well as all
-        of our component examples for a single one-time purchase.
-      </p>
-
-     
+      
+     <slot></slot>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
+  components: {
+   
+  },
+  
   props: {
     planName: String, // Define the prop and its type
     buttonText: {
@@ -61,6 +62,9 @@ export default {
       type: String,
       default: "text-black",
     },
-  },
+
+    shouldShow:{
+        default:true,
+  },}
 };
 </script>

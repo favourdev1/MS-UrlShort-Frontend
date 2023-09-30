@@ -149,11 +149,58 @@
           <div class="flex items-center mx-auto py-10">
             <!-- <div class="w-full "></div> -->
 
-            <PaymentContainer planName="Basic (Free)" buttonColor="bg-white border hover:bg-slate-200"></PaymentContainer>
+            <PaymentContainer
+              planName="Basic (Free)"
+              :shouldShow="false"
+              buttonColor="bg-white border hover:bg-slate-200"
+            >
+              <p
+                class="mt-6 text-base leading-6 text-slate-600 text-center font-bold"
+              >
+                Customize the end of your links
+              </p>
+              <ul
+                class="mt-10 space-y-8 border-t border-slate-900/10 pt-10 text-sm leading-6 text-slate-700"
+              >
+                <PaymentFeatures></PaymentFeatures>
+              </ul>
+            </PaymentContainer>
 
-            <PaymentContainer  planName="Pro (Paid)" planNameColor="text-purple-700"  buttonColor="bg-purple-700 text-white hover:bg-purple-600 "></PaymentContainer>
+            <PaymentContainer class="bg-transparent"
+              planName="Pro (Paid)"
+              :shouldShow="true"
+              planNameColor="text-purple-700"
+              buttonColor="bg-purple-700 text-white hover:bg-purple-600 "
+            >
+              <p
+                class="mt-6 text-base leading-6 text-purple-600 text-center font-bold"
+              >
+                Everything in Pro and More!
+              </p>
 
-            <PaymentContainer  planName="Enterprise (Paid)" buttonColor="bg-orange-600 text-white hover:bg-orange-700"></PaymentContainer>
+              <ul
+                class="mt-10 space-y-8 border-t border-slate-900/10 pt-10 text-sm leading-6 text-slate-700"
+              >
+                <PaymentFeatures></PaymentFeatures>
+              </ul>
+            </PaymentContainer>
+
+            <PaymentContainer
+              planName="Enterprise (Paid)"
+              buttonColor="bg-orange-600 text-white hover:bg-orange-700"
+            >
+              <p
+                class="mt-6 text-base leading-6 text-orange-600 text-center font-bold"
+              >
+                Everything in Pro and More!
+              </p>
+
+              <ul
+                class="mt-10 space-y-8 border-t border-slate-900/10 pt-10 text-sm leading-6 text-slate-700"
+              >
+                <PaymentFeatures paymentFeaturesText=""> </PaymentFeatures>
+              </ul>
+            </PaymentContainer>
           </div>
         </div>
       </div>
@@ -163,9 +210,11 @@
 
 <script>
 import PaymentContainer from ".././components/Payment/PaymentComponent.vue";
+import PaymentFeatures from ".././components/Payment/paymentFeatures.vue";
 export default {
   components: {
     PaymentContainer,
+    PaymentFeatures,
   },
   data() {
     return {
