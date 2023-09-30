@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center pt-20 mx-auto w-full md:w-11/12 lg:w-3/4 h-max">
+  <div class="text-center mx-auto w-full md:w-11/12 lg:w-3/4 h-max">
     <h1
       class="font-bold py-10 text-7xl text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-700 to-blue-700"
     >
@@ -128,6 +128,9 @@
       </div>
     </div>
   </div>
+
+
+  <!-- Beginning of ppayment section  -->
   <div class="h-min relative">
     <div class="relative mt-10 py-20 h-max overflow-hidden">
       <div class="z-1 absolute w-full h-max overflow-hidden ">
@@ -207,15 +210,21 @@
       </div>
     </div>
   </div>
+
+  <!-- End of Payment section  -->
+
+  <Testimonial class="relative"></Testimonial>
 </template>
 
 <script>
 import PaymentContainer from ".././components/Payment/PaymentComponent.vue";
 import PaymentFeatures from ".././components/Payment/paymentFeatures.vue";
+import Testimonial from ".././components/Testimonial/TestimonialSection.vue";
 export default {
   components: {
     PaymentContainer,
     PaymentFeatures,
+    Testimonial,
   },
   data() {
     return {
