@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="w-full fixed z-[999] top-0 backdrop-blur-md bg-white">
-      <NavBar ></NavBar>
+      <!-- <NavBar ></NavBar> -->
     </div>
     <div class="pt-32">
       <router-view></router-view>
@@ -16,14 +16,14 @@
 
 <script>
 
-import NavBar from "./components/navbar/NavBar.vue";
+// import NavBar from "./components/navbar/NavBar.vue";
 import FooterSection from "./components/props/Footer/FooterView.vue";
 import 'boxicons/css/boxicons.min.css';
 
 export default {
   name: "App",
   components: {
-    NavBar,
+    // NavBar,
     FooterSection,
   },
 };

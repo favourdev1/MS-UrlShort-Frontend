@@ -5,6 +5,9 @@ module.exports = {
         extend: {
             zIndex: {
                 '999': '999'
+            },
+            translate: {
+                '-22': '-22rem'
             }
         },
     },

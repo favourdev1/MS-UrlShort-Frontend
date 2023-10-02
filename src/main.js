@@ -9,6 +9,7 @@ import UsersPage from "./UsersPage.vue";
 import HomePage from "./Home/HomePage.vue";
 import LoginPage from "./LoginPage.vue";
 import SignupPage from "./SignupPage.vue"
+import DashBoardPage from "./DashBoardPage.vue"
 
 // Vue.use(VueRouter);
 
@@ -28,6 +29,10 @@ const routes = [{
     {
         path: "/signup",
         component: SignupPage,
+    },
+    {
+        path: "/DashBoardPage",
+        component: DashBoardPage,
     },
 ];
 
